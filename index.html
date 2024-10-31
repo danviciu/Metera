@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteraServ - Service Auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Headerul -->
+    <header>
+        <div class="logo">
+            <h1>MeteraServ</h1>
+            <p>Service auto de încredere în Brașov</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#despre">Despre Noi</a></li>
+                <li><a href="#servicii">Servicii</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sectiunea Despre Noi -->
+    <section id="despre">
+        <h2>Despre MeteraServ</h2>
+        <p>MeteraServ oferă o gamă completă de servicii auto pentru toate tipurile de vehicule. Cu o echipă profesionistă și echipamente moderne, ne asigurăm că fiecare client pleacă mulțumit.</p>
+    </section>
+
+    <!-- Sectiunea Servicii -->
+    <section id="servicii">
+        <h2>Servicii</h2>
+        <div class="servicii-lista">
+            <div class="serviciu">
+                <h3>Diagnoză Computerizată</h3>
+                <p>Identificăm rapid și eficient problemele vehiculului dumneavoastră.</p>
+            </div>
+            <div class="serviciu">
+                <h3>Reparații Mecanice</h3>
+                <p>Reparații de înaltă calitate pentru toate tipurile de mașini.</p>
+            </div>
+            <div class="serviciu">
+                <h3>Schimb Ulei și Filtre</h3>
+                <p>Întreținerea regulată este esențială pentru o mașină de încredere.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Formular Programare -->
+<section id="programare">
+    <h2>Programare Service</h2>
+    <form id="formular-programare" action="#" method="post">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" required>
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="data">Data programării:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="observatii">Observații:</label>
+        <textarea id="observatii" name="observatii" rows="4" placeholder="Detalii despre problema mașinii..."></textarea>
+
+        <button type="submit">Trimite Programare</button>
+    </form>
+</section>
+    <!-- Sectiunea Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Ne găsiți la adresa:</p>
+        <p><strong>Oituz 29, Săcele, Brașov</strong></p>
+        <p>Telefon: <strong>0744 501 476</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 MeteraServ. Toate drepturile rezervate.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Auto Chatbot Expert</title>
+    <style>
+        .chat-container {
+            max-width: 400px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .chat-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+        }
+
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 15px;
+            background: #f9f9f9;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 15px;
+            max-width: 80%;
+            white-space: pre-wrap;
+        }
+
+        .bot-message {
+            background: #e8e8e8;
+            margin-right: auto;
+        }
+
+        .user-message {
+            background: #2c3e50;
+            color: white;
+            margin-left: auto;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+
+        .chat-input button {
+            padding: 8px 16px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .suggested-questions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px;
+            background: #f0f0f0;
+        }
+
+        .suggested-question {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .suggested-question:hover {
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    </script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '6722312f3e8b7136c16d945d' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
+
+
